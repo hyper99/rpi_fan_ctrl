@@ -1,0 +1,13 @@
+ [Unit]
+ Description=PWM Fan Control by hyper99@qq.com
+ After=multi-user.target
+
+ [Service]
+ Type=simple
+ WorkingDirectory=/home/pi/Workspace/fan_ctrl/dist
+ ExecStart=/home/pi/Workspace/fan_ctrl/dist/run.sh
+ #Restart=always
+
+ [Install]
+ #WantedBy=default.target
+ WantedBy=multi-user.target
